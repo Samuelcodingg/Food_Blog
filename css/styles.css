@@ -75,6 +75,7 @@ body {
 }
 
 .logo-container > *:last-child {
+    font-weight: bold;
     margin-left: 20px;
 }
 
@@ -105,9 +106,38 @@ body {
     margin-left: 20px;
     cursor: pointer;
     transition: all 300ms;
+    font-weight: bold;
 }
 
 .nav li:hover {
     color: #37bcf9;
     transform: scale(1.2,1.2);
 }
+
+/*BANNER*/
+.banner {
+    background-image: url(../img/bakbaner.png);
+    margin-top: 30px;
+    padding: 20px 0px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    text-align: center;
+    color: white;
+    animation: backBanner 400ms linear;
+}
+
+@keyframes backBanner {
+    from {
+        background-position: -200px -200px;
+    }
+    to {
+        background-position: 0px 0px;
+    }
+}
+
+
+
+.banner h1{
+    text-shadow: 3px 3px black;
+}
+
