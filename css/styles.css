@@ -1,0 +1,113 @@
+/*GENERALES*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-image: url(../img/pattern.png);
+}
+
+/*UTILIDADES*/
+
+.wrap {
+    width: 80%;
+    margin: 0px auto; /*Ojo debe tener un ancho definido*/
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+
+/*HEADER*/
+
+.header {
+    background-color: black;
+    color: white;
+}
+
+.logo-container {
+    float: left;
+    padding: 10px 30px;
+    margin: 10px auto;
+    background-color: #37bcf9;
+    cursor: pointer;
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+.logo-container > * {
+    float: left;
+}
+
+.logo-container i {
+    font-size: 28px;
+}
+
+.logo-container:hover {
+    background-color: gray;
+    color: black;
+}
+
+.logo-container:hover i{
+    animation: burguer 400ms linear;
+}
+
+
+@keyframes burguer {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(200%);
+        color: white;
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.logo-container > *:last-child {
+    margin-left: 20px;
+}
+
+
+.logo-container:hover > *:last-child{
+    animation: food 400ms linear;
+}
+
+@keyframes food {
+    from {
+        transform: translateX(200%);
+        color: white;
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.nav {
+    float: right;
+    width: 35%;
+    margin-top: 25px;
+}
+
+.nav li {
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.nav li:hover {
+    color: #37bcf9;
+    transform: scale(1.2,1.2);
+}
