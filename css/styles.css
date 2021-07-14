@@ -158,3 +158,78 @@ body {
     }
 }
 
+/*TARJETAS*/
+
+.cards .card {
+    float: left;
+    width: 17%;
+    background-color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 18px;
+    padding: 20px 8px;
+    min-height: 198px;
+    box-shadow: 0px 0px 2px gray;
+    overflow: hidden;
+    transition: all 300ms;
+}
+
+.cards .card:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.cards .card:hover i {
+    color: #37bcf9;
+    animation: downIcon 300ms linear;
+}
+
+@keyframes downIcon {
+    from {
+        transform: translateY(-200%);
+    }
+}
+
+.cards .card:hover h3 {
+    color: white;
+    animation: downTitle 300ms linear;
+}
+
+@keyframes downTitle {
+    from {
+        transform: translateY(-500%);
+    }
+}
+
+.cards .card:hover p {
+    color: white;
+    animation: getP 300ms linear;
+}
+
+@keyframes getP {
+    from {
+        transform: translateX(-300%);
+    }
+}
+
+.cards .card:last-child {
+    margin-right: 0px;
+}
+
+.cards .card i {
+    padding-top: 20px;
+    font-size: 45px;
+}
+
+.text-card {
+    margin-top: 40px;
+}
+
+.text-card h3 {
+    color: #00538c;
+}
+
+.text-card p {
+    margin-top: 10px;
+    color: #00538c;
+}
