@@ -134,6 +134,7 @@ button {
     border: 10px solid white;
     box-shadow: 0px 0px 2px gray;
     text-align: center;
+    letter-spacing: 1px;
     color: white;
     background-position: -309px;
     overflow: hidden;
@@ -339,4 +340,82 @@ button {
     opacity: 1;
 }
 
+/*SECCION ARTÍCULOS*/
 
+.articles-section {
+    float: left;
+    width: 65%;
+    margin: 30px auto;
+}
+
+.articles-section > div {
+    width: 80%;
+    margin: 30px auto;
+    margin-left: 15%;
+}
+
+.title-articles {
+    background-color: #ccc;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow:  0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    letter-spacing: 1px;
+}
+
+.article {
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 2px gray;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+.article div h2 {
+    float: left;
+    color: #00538c;
+    margin-top: 10px;
+}
+
+.article div h4 {
+    float: right;
+    background-color: #393d3f;
+    color: white;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.article p {
+    margin-top: 10px;
+}
+
+.to-blog-button {
+    background-color: white;
+    padding: 30px 0px;
+    text-align: center;
+    box-shadow: 0px 0px 2px gray;
+    cursor: pointer;
+    color: #00538c;
+    letter-spacing: 1px;
+    transition: all 1s;
+}
+
+.to-blog-button:hover {
+    border-radius: 30px;
+    background-color: #393d3f;
+    color: white;
+    text-shadow: 3px 3px black;
+    animation: effectBlogButton 10s linear infinite;
+}
+
+@keyframes effectBlogButton {
+    0% {
+        border: 10px solid #37bcf9;
+    }    
+    50% {
+        border: 10px solid green;
+    }
+    100% {
+        border: 10px solid yellow;
+    }
+}
