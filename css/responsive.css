@@ -1,0 +1,21 @@
+@media (max-width: 1268px) {
+    .cards .card {
+        width: 16.3%;
+        min-height: 253px;
+    }
+
+    .login {
+        min-height: 200px;
+    }
+
+    .login > div > div{
+        width: 90%;
+    }
+
+    input[type=text],
+    input[type=password]{
+        width: 80%;
+    }
+
+    
+}
