@@ -79,3 +79,72 @@
         font-size: 15px;
     }
 }
+
+@media (max-width: 764px) {
+    .logo-container i{
+        font-size: 50px;
+    }
+
+    .logo-container h2 {
+        font-size: 45px;
+    }
+    
+    .nav {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .nav li {
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .cards .card {
+        min-height: 120px;
+        width: 12.5%;
+    }
+
+    .cards .card p{
+        display: none;
+    }
+
+    .card-aside-title {
+        font-size: 10px;
+    }
+
+    .social-media > div > i {
+        font-size: 20px;
+    }
+
+    .social-media div h4 {
+        font-size: 10px;
+        top: -18px;
+        left: 50px;
+    }
+
+    .title-articles h1{
+        font-size: 15px;
+    }
+
+    .article div h2 {
+        font-size: 13px;
+    }
+
+    .article div h4 {
+        font-size: 9px;
+    }
+
+    .article p {
+        font-size: 8px;
+    }
+
+    .footer-title {
+        font-size: 10px;
+    }
+
+    .footer-menu ul li {
+        font-size: 10px;
+    }
+
+}
