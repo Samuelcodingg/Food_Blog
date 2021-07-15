@@ -106,7 +106,7 @@
     }
 
     .cards .card p{
-        display: none;
+        opacity: 0;
     }
 
     .card-aside-title {
@@ -146,5 +146,137 @@
     .footer-menu ul li {
         font-size: 10px;
     }
+}
 
+@media (max-width: 575px) {
+
+    .banner {
+        max-height: none;
+    }
+
+    .banner h1 {
+        font-size: 35px;
+    }
+
+    .cards .card {
+        width: 95%;
+    }
+
+    .cards .card:first-child {
+        margin-left: 0px;
+    }
+
+    .cards .card p{
+        opacity: 1;
+    }
+
+    .text-card h3 {
+        font-size: 20px;
+    }
+
+    .text-card p {
+        font-size: 15px;
+    }
+
+    .aside-bar {
+        float: none;
+        width: 100%;
+    }
+
+    .card-aside-title {
+        width: 80%;
+    }
+
+    .search div {
+        width: 80%;
+    }
+
+    .search div i {
+        font-size: 20px;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=button],
+    button {
+        height: 25px;
+        padding-left: 5px;
+        transition: all 300ms;
+        width: 75%;
+    }
+
+    .login > div > div > i {
+        font-size: 20px;
+    }
+
+    .card-aside-container {
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
+    .card-aside-title {
+        font-size: 20px;
+    }
+
+    .social-media > div > i {
+        font-size: 30px;
+    }
+
+    .social-media div h4 {
+        width: 80%;
+        font-size: 20px;
+        top: -25px;
+        left: 80px;
+    }
+
+    .articles-section {
+        width: 85%;
+    }
+
+    .title-articles h1{
+        font-size: 25px;
+    }
+
+    .articles {
+        width: 100%;
+    }
+
+    .article div h2 {
+        font-size: 20px;
+    }
+
+    .article div h4 {
+        margin-top: 10px;
+        float: left;
+        font-size: 9px;
+    }
+
+    .article p {
+        font-size: 14px;
+    }
+
+    .footer .wrap > div {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .footer-title {
+        display: block;
+        margin: 20px auto;
+        font-size: 20px;
+    }
+
+    .footer-menu ul li {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .where iframe {
+        display: block;
+        margin-left: 10%;
+    }
+
+    .icon {
+        width: 15%;
+    }
 }
